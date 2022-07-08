@@ -1,0 +1,20 @@
+{
+  "name": "@spitzhut/two-sum",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Slow and fast approach to solving the two-sum problem (Leetcode #1)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haukeolf/two-sum.git"
+  },
+  "author": "Hauke Olf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haukeolf/two-sum/issues"
+  },
+  "homepage": "https://github.com/haukeolf/two-sum#readme"
+}
