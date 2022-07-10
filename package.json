@@ -1,6 +1,6 @@
 {
   "name": "@spitzhut/two-sum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Slow and fast approach to solving the two-sum problem (Leetcode #1)",
   "main": "two-sum.js",
   "scripts": {
