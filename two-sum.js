@@ -5,7 +5,7 @@ const SOLUTION_B = 7;
 /**
  * Return solutions in ms for corresponding algorithm & input size
  */
-export function solveTwoSum(inputSizes, algorithm) {
+function solveTwoSum(inputSizes, algorithm) {
     const solutionTimes = [];
     inputSizes.forEach((inputSize) => {
         const nums = createNumbersInput(inputSize);
@@ -24,7 +24,7 @@ export function solveTwoSum(inputSizes, algorithm) {
 /** 
 * Slow solution for the two sum problem: O(n^2)
 */
-export function twoSumSlow(nums) {
+function twoSumSlow(nums) {
     for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
             if (nums[i] + nums[j] === SOLUTION_SUM) {
@@ -38,7 +38,7 @@ export function twoSumSlow(nums) {
 /** 
 * Slightly slower solution than fast for the two sum problem: Also O(n)
 */
-export function twoSumMedium(nums) {
+function twoSumMedium(nums) {
     const map = {};
     for (let i = 0; i < nums.length; i++) {
         map[nums[i]] = i;
@@ -55,7 +55,7 @@ export function twoSumMedium(nums) {
 /** 
 * Fast solution for the two sum problem: O(n)
 */
-export function twoSumFast(nums) {
+function twoSumFast(nums) {
     const map = {};
     for (let i = 0; i < nums.length; i++) {
         let compliment = SOLUTION_SUM - nums[i];
@@ -89,3 +89,10 @@ function createNumbersInput(n) {
     numbersInput.push(SOLUTION_B);
     return numbersInput;
 }
+
+module.exports = {
+    solveTwoSum,
+    twoSumSlow,
+    twoSumMedium,
+    twoSumFast
+  };

@@ -1,9 +1,8 @@
 {
   "name": "@spitzhut/two-sum",
   "version": "1.0.0",
-  "type": "module",
   "description": "Slow and fast approach to solving the two-sum problem (Leetcode #1)",
-  "main": "index.js",
+  "main": "two-sum.js",
   "scripts": {
     "start": "node index.js"
   },
